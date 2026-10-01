@@ -1,0 +1,138 @@
+:root {
+  --md-text-font: "Avenir Next", "Helvetica Neue", sans-serif;
+  --md-code-font: "SFMono-Regular", Consolas, monospace;
+}
+
+.md-content {
+  max-width: 980px;
+}
+
+.md-content__inner {
+  padding-bottom: 3rem;
+}
+
+.md-content h1 {
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 0.65rem;
+}
+
+.md-content h2 {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 0.35rem;
+  margin-top: 2.4rem;
+}
+
+.md-content h3 {
+  margin-top: 1.6rem;
+}
+
+.md-typeset img {
+  display: block;
+  width: 88%;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto 0.45rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+  cursor: zoom-in;
+}
+
+/* Screenshot proportions are assigned from each image's intrinsic dimensions. */
+.md-typeset img.wiki-shot--compact {
+  width: auto;
+  max-width: min(100%, 26rem);
+}
+
+.md-typeset img.wiki-shot--portrait {
+  width: 42%;
+  max-width: 28rem;
+}
+
+.md-typeset img.wiki-shot--standard {
+  width: 65%;
+  max-width: 42rem;
+}
+
+.md-typeset img.wiki-shot--wide {
+  width: 82%;
+  max-width: 54rem;
+}
+
+.md-typeset img.wiki-shot--panoramic {
+  width: 96%;
+}
+
+.md-typeset img + em {
+  display: block;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.82rem;
+  text-align: center;
+}
+
+.md-typeset figure.wiki-figure {
+  margin: 1.25rem 0 1.5rem;
+}
+
+.md-typeset figure.wiki-figure img {
+  margin-top: 0;
+}
+
+.md-typeset figure.wiki-figure figcaption {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.md-typeset figure.wiki-figure--side {
+  float: right;
+  width: min(36%, 22rem);
+  margin: 0.25rem 0 1.25rem 1.5rem;
+}
+
+.md-typeset figure.wiki-figure--side img {
+  width: 100%;
+}
+
+.md-typeset figure.wiki-figure--wide {
+  clear: both;
+}
+
+.md-typeset figure.wiki-figure--wide img {
+  width: 100%;
+}
+
+.md-typeset .wiki-clear {
+  clear: both;
+}
+
+.md-typeset table th {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--secondary {
+    width: 14rem;
+  }
+}
+
+@media screen and (max-width: 36em) {
+  .md-content {
+    max-width: none;
+  }
+
+  .md-typeset img {
+    width: auto;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .md-typeset figure.wiki-figure--side {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+}
